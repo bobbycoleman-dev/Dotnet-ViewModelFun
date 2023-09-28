@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Numbers";
+}
+
+@model Number
+
+<div class="text-center">
+    <h1 class="display-4">Here are some numbers</h1>
+    @foreach(int n in Model.DisplayNumbers)
+    {
+        <p class="fs-2">@n</p>
+    }
+</div>
